@@ -10,6 +10,11 @@ const stack = createStackNavigatot();
 
 export default () => (
     <StackActions.Navigator>
+        inicialRouteName="Preload"
+        screenOptions={{
+            headershown: false
+        }}
+        
         <StackActions.Screen name="Preload" component={Preload}/>
         <StackActions.Screen name="SingIn" component={SingnIn}/>
         <StackActions.Screen name="SingUp" component={SingUp}/>
